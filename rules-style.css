@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --theme-bg: rgb(1, 1, 26);
+    --theme-color: whitesmoke;
+}
+body{
+    background-color: black;
+}
+.main-list
+{
+    /* position: absolute; */
+    margin-left: 50px;
+    list-style:upper-alpha;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+.main-point{
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 30px;
+}
+h1{
+    font-size: 100px;
+}
+.sub-list{
+    list-style: none;
+}
+.sub-point{
+    font-weight: normal;
+    /* position:absolute; */
+    left: 20px;
+}
+.content{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    background-color: var(--theme-bg);
+    color:var(--theme-color);
+}

@@ -1,23 +1,29 @@
 let options = ["rock", "paper", "scissors"];
-const compTurn=document.querySelector(".compTurn")
-const points=document.querySelector(".points")
-let score = 0;
+const compTurn = document.querySelector(".compTurn");
+const points = document.querySelector(".points");
+let playerScore = 0;
+let compScore = 0;
+let roundNum = 1;
 
 function compare(value) {
-const comp=options[Math.floor(Math.random() * 3)];
+  const comp = options[Math.floor(Math.random() * 3)];
   if (value == "rock" && comp == "scissors") {
-    score = score + 1;
+    playerScore = playerScore + 1;
   } else if (value == "scissors" && comp == "paper") {
-      score = score + 1;
-  } else if (value == "paper" && comp== "rock") {
-      score = score + 1;
+    playerScore = playerScore + 1;
+  } else if (value == "paper" && comp == "rock") {
+    playerScore = playerScore + 1;
   } else if (value === comp) {
-      score = score;
+    playerScore = playerScore;
   } else {
-      score = score - 1;
+    compScore = compScore + 1;
   }
-  compTurn.innerText=comp
-  points.innerText=score
+  roundNum = roundNum + 1;
+  console.log(compScore);
+  compTurn.innerText = comp;
+  points.innerText = playerScore;
+
+  if (compScore == 5 && playerScore < 5) {
+    console.log("Computer Wins")
+  }
 }
-
-

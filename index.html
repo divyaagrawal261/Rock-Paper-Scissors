@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <button class="option" id="rock" value="rock" onclick="compare(this.value)">Rock</button>
-    <button class="option" id="paper" value="paper" onclick="compare(this.value)">Paper</button>
-    <button class="option" id="scissors" value="scissors" onclick="compare(this.value)">Scissors</button>
-    <div class="move">The Computer's move is: <span class="compTurn"></span></div>
-        <div class="score">The score is: <span class="points"></span></div>
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="top-frame">
+        <div class="brand-name">
+          Rock <br />Paper<br />
+          Scissors
+        </div>
+        <div class="logo-section">
+          <img class="logo" src="images/Logo.png" />
+        </div>
+      </div>
+      <div class="bottom-frame">
+        <span class="image-container"></span>
+        <div class="options-container">
+          <ul>
+            <li><a href="rules.html">Rules</a></li>
+            <!-- <li  class="theme" onclick="changeTheme()">Theme</li> -->
+            <li><a href="game.html">Play</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
