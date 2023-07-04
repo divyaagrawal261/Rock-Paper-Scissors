@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="game-style.css" />
   </head>
   <body>
     <div class="top-frame">
       <div class="score-card">
-        <div class="player"></div>
-        <div class="points"></div>
+        <div class="player">Player's Score</div>
+        <div class="points" id="player-points">00</div>
       </div>
       <div class="score-card">
-        <div class="player"></div>
-        <div class="points"></div>
+        <div class="player">Computer's Score</div>
+        <div class="points" id="computer-points">00</div>
       </div>
     </div>
-    <div class="round-number"></div>
-    <button class="reset-button" onclick="reset()">Reset</button>
+    <div class="round-number">Rounds Played: 0</div>
+    <button class="reset-button" onclick="reset()"></button>
     <div class="playground">
       <div class="player-side">
         <button
@@ -28,7 +28,7 @@
           value="rock"
           onclick="compare(this.value)"
         >
-          Rock
+          <!-- Rock -->
         </button>
         <button
           class="option"
@@ -36,7 +36,7 @@
           value="paper"
           onclick="compare(this.value)"
         >
-          Paper
+          <!-- Paper -->
         </button>
         <button
           class="option"
@@ -44,15 +44,20 @@
           value="scissors"
           onclick="compare(this.value)"
         >
-          Scissors
+          <!-- Scissors -->
         </button>
       </div>
-      <div class="computer-side"></div>
+      <div class="computer-side">
+        <div class="computer-move"></div>
+      </div>
     </div>
-    <div class="move">
-      The Computer's move is: <span class="compTurn"></span>
+
+    <div>
+      <div class="report-card">
+        <div><span class="result">You Won in Rounds</span></div>
+        <div><button class="okay" onclick="replay()">OKAY</button></div>
+      </div>
     </div>
-    <div class="score">The score is: <span class="points"></span></div>
     <script src="script.js"></script>
   </body>
 </html>

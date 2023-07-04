@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --theme-bg: rgb(1, 1, 26);
+  --theme-color: whitesmoke;
+}
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-color);
+}
+.top-frame {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  height: 120px;
+  border: 1px solid var(--theme-color);
+  border-radius: 5px;
+  align-items: center;
+}
+.score-card {
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid var(--theme-color);
+  height: 100px;
+  width: 650px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.player {
+  box-sizing: border-box;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 50px;
+  margin: 5px 0px 5px 5px;
+  width: 500px;
+  height: 80px;
+}
+.points {
+  box-sizing: border-box;
+  text-align: center;
+  height: 80px;
+  border: 1px solid var(--theme-color);
+  font-size: 50px;
+  padding-top: 10px;
+  width: 80px;
+}
+
+.round-number {
+  color: black;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  top: auto;
+  transform-origin: center center;
+  left: 45vw;
+  width: fit-content;
+  border: 1px solid black;
+  height: max-content;
+}
+.reset-button:active {
+  transition: 200ms;
+  rotate: -360deg;
+}
+.reset-button {
+  padding: 5px;
+  position: absolute;
+  top: 170px;
+  transform-origin: center center;
+  left: 47vw;
+  width: fit-content;
+  border: 1px solid black;
+  height: max-content;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: greenyellow;
+  background-image: url(images/reset.jpg);
+  background-size: cover;
+}
+.playground {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 98vw;
+  height: 470px;
+  border: 1px solid black;
+  margin: 10px;
+}
+#scissors {
+  background-image: url(images/Scissors.png);
+  position: relative;
+  top: 150px;
+}
+#paper {
+  position: relative;
+  top: 300px;
+  background-image: url(images/Paper.png);
+}
+#rock {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background-image: url(images/Rock.png);
+}
+.option:hover {
+  cursor: pointer;
+}
+.option {
+  rotate: -30deg;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  border-radius: 100%;
+  border: 5px solid var(--theme-color);
+}
+
+.player-side {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  border: 1px solid var(--theme-color);
+}
+
+.computer-side {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--theme-color);
+}
+.computer-move {
+  background-image: url(images/Logo.png);
+  height: 200px;
+  width: 200px;
+  border: 1px solid var(--theme-color);
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.report-card {
+  display: none;
+  position: absolute;
+  left: 27%;
+  top: 40%;
+  text-align: center;
+  color: black;
+  height: 100px;
+  padding: 50px;
+  border-radius: 20px;
+  font-size: 40px;
+  background-color: rgb(218, 165, 165);
+  width: 500px;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.okay {
+  border-radius: 5px;
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  font-size: 30px;
+}
